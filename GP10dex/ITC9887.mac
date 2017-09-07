@@ -1,0 +1,85 @@
+# DEXVERSION=10.0.193.0 2 2
+  MenuSelect title File entry 'Open Source Dictionary...' 
+  FileOpen file ':C:GPDEX/DiccGP10/INFOCRED BoliviaAITB/Dyn10ITC.dic' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Utilities Button' item 0 
+  ClickHit field 'Toolbar Utilities Button' item 6  # 'Extract' 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+ActivateWindow dictionary 'default'  form Extractor window Extractor 
+  ClickHit field '(L) Extract Button' 
+  FileSave file ':C:GPDEX/DiccGP10/INFOCRED BoliviaAITB/Extract.dic' 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+  MenuSelect title File entry 'Open Destination Dictionary...' 
+  FileOpen file ':C:GPDEX/DiccGP10/INFOCRED BoliviaAITB/Extract.dic' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Transfer Button' item 0 
+  ClickHit field 'Toolbar Transfer Button' item 4  # 'Dictionary Module' 
+NewActiveWin dictionary 'default'  form 'Build Dictionary' window 'Transfer Module' 
+ActivateWindow dictionary 'default'  form 'Build Dictionary' window 'Transfer Module' 
+  Pause , 'seleccione formas alternativas'
+  MoveTo field '(L) Close Button' 
+  ClickHit field '(L) Close Button' 
+  MenuSelect title File entry 'Close Destination Dictionary' 
+  MenuSelect title File entry 'Open Editable Dictionary...' 
+  FileOpen file ':C:GPDEX/DiccGP10/INFOCRED BoliviaAITB/Extract.dic' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Utilities Button' item 6  # 'Extract' 
+  ClickHit field 'Toolbar Utilities Button' item 5  # 'Create Product Information' 
+NewActiveWin dictionary 'default'  form 'Product Res' window 'Product Resource' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'File Name' , 'DYNAMICS.SET'
+  MoveTo field 'Cluster ID' 
+  MoveTo field 'Product Name' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Product Name' , 'Importación Trx Contables'
+  MoveTo field 'Product ID' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Product ID' , '9887'
+  MoveTo field 'Form Dictionary' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Form Dictionary' , 'FRM9887.DIC'
+  MoveTo field 'Report Dictionary' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Report Dictionary' , 'RPT9887.DIC'
+  MoveTo field '(L) Compatiblity ID' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field '(L) Compatiblity ID' , 'Importación Trx Contables'
+  MoveTo field '(L) Compatiblity Message' 
+  MenuSelect title Edit entry Paste 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  TypeTo field '(L) Compatiblity Message' , 'Importación Trx Contables'
+  MoveTo field 'Ok Button' 
+  ClickHit field 'Ok Button' 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  ClickHit field 'Toolbar Utilities Button' item 9  # 'Auto-Chunk' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  ClickHit field 'Lookup Button 3' 
+  FileSave file ':C:GPDEX/DiccGP10/INFOCRED BoliviaAITB/chunks/GP10ITC.CNK' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  MoveTo field 'Dictionary Name' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Dictionary Name' , 'ITC9887.DIC'
+  MoveTo field 'Accounting Modules' item 1  # 'Module 001' 
+  ClickHit field 'Accounting Modules' item 51  # 'Module 051' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  ClickHit field 'Accounting Modules' item 51  # 'Module 051' 
+  MoveTo field '(L) Major Version' 
+  TypeTo field '(L) Major Version' , '10'
+  MoveTo field '(L) Minor Version' 
+  MoveTo field '(L) Build Number' 
+  MoveTo field '(L) Group Box' item 0  # 'Total Compression' 
+  ClickHit field '(L) Group Box' item 0  # 'Total Compression' 
+  MoveTo field 'Ok Button' 
+  ClickHit field 'Ok Button' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
