@@ -1,28 +1,27 @@
 # DEXVERSION=11.00.0349.000 2 2
   MenuSelect title File entry 'Open Source Dictionary...' 
-  FileOpen file ':C:jcTii/Desarrollo/GPDex/scc/BolAitbConAAgp2013/DynGp2013Dev.dic' type 0 
+  FileOpen file ':C:TiiSelam/DESA_MSAL/bo01/GP2013R2dex/DynGp2013Dev.dic' type 0 
 ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
   MoveTo field 'Toolbar Utilities Button' item 0 
   ClickHit field 'Toolbar Utilities Button' item 6  # 'Extract' 
 NewActiveWin dictionary 'default'  form Extractor window Extractor 
 ActivateWindow dictionary 'default'  form Extractor window Extractor 
   ClickHit field '(L) Extract Button' 
-  FileSave file ':C:jcTii/Desarrollo/GPDex/scc/BolAitbConAAgp2013/Extract.dic' 
+  FileSave file ':C:TiiSelam/DESA_MSAL/bo01/GP2013R2dex/Extract.dic' 
 NewActiveWin dictionary 'default'  form Extractor window Extractor 
 NewActiveWin dictionary 'default'  form Extractor window Extractor 
   MenuSelect title File entry 'Open Destination Dictionary...' 
-  FileOpen file ':C:jcTii/Desarrollo/GPDex/scc/BolAitbConAAgp2013/Extract.dic' type 0 
+  FileOpen file ':C:TiiSelam/DESA_MSAL/bo01/GP2013R2dex/Extract.dic' type 0 
 ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
   MoveTo field 'Toolbar Transfer Button' item 0 
   ClickHit field 'Toolbar Transfer Button' item 4  # 'Dictionary Module' 
 NewActiveWin dictionary 'default'  form 'Build Dictionary' window 'Transfer Module' 
 ActivateWindow dictionary 'default'  form 'Build Dictionary' window 'Transfer Module' 
-  Pause , 'seleccione formas y reportes alternativos'
   MoveTo field '(L) Close Button' 
   ClickHit field '(L) Close Button' 
   MenuSelect title File entry 'Close Destination Dictionary' 
   MenuSelect title File entry 'Open Editable Dictionary...' 
-  FileOpen file ':C:jcTii/Desarrollo/GPDex/scc/BolAitbConAAgp2013/Extract.dic' type 0 
+  FileOpen file ':C:TiiSelam/DESA_MSAL/bo01/GP2013R2dex/Extract.dic' type 0 
 ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
   MoveTo field 'Toolbar Utilities Button' item 6  # 'Extract' 
   ClickHit field 'Toolbar Utilities Button' item 5  # 'Create Product Information' 
@@ -63,7 +62,7 @@ ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar'
 NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
 ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
   ClickHit field 'Lookup Button 3' 
-  FileSave file ':C:jcTii/Desarrollo/GPDex/scc/BolAitbConAAgp2013/chunks/GP11ITC.CNK' 
+  FileSave file ':C:TiiSelam/DESA_MSAL/bo01/GP2013R2dex/GP11ITC.CNK' 
   MoveTo field 'Dictionary Name' 
 ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
   MenuSelect title Edit entry Paste 
